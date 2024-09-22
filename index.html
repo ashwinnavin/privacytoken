@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web3 Data Vault - Secure Your Digital Life</title>
+    <title>Web3 Data Vault - Secure, Manage, and Monetize Your Digital Life</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,10 +17,11 @@
             background-color: #1a1a2e;
             color: #fff;
             text-align: center;
-            padding: 1rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
         }
-        h1 { margin-bottom: 0; }
-        .tagline { font-style: italic; }
+        h1 { margin-bottom: 0.5rem; }
+        .tagline { font-style: italic; margin-bottom: 1rem; }
         section { margin: 2rem 0; }
         .feature {
             background-color: #f4f4f4;
@@ -34,6 +35,7 @@
             padding: 2rem;
             text-align: center;
             border-radius: 5px;
+            margin-top: 2rem;
         }
         .button {
             display: inline-block;
@@ -47,45 +49,91 @@
         .button:hover {
             background-color: #16213e;
         }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+            margin: 1rem auto;
+        }
+        input, button {
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Web3 Data Vault</h1>
         <p class="tagline">Secure, Manage, and Monetize Your Digital Life</p>
+        <p>Empowering individuals to take control of their digital footprint</p>
     </header>
 
     <main>
         <section id="overview">
             <h2>Project Overview</h2>
-            <p>Web3 Data Vault is a revolutionary protocol that empowers consumers to take control of their digital footprint. Our platform provides a cryptographically secure data vault, allowing you to aggregate, manage, and monetize your data from various online and offline sources through one easy-to-use interface.</p>
+            <p>Web3 Data Vault is a groundbreaking protocol that puts you in control of your digital identity and data. In today's interconnected world, your personal information is scattered across numerous platforms and services. Our mission is to provide a secure, user-centric solution that allows you to aggregate, manage, and monetize your data on your own terms.</p>
+            <p>Leveraging the power of blockchain technology and cryptographic security, Web3 Data Vault creates a decentralized ecosystem where your data remains under your control at all times. Say goodbye to data silos and hello to a new paradigm of data ownership and privacy.</p>
         </section>
 
         <section id="features">
             <h2>Key Features</h2>
             <div class="feature">
                 <h3>Secure Data Aggregation</h3>
-                <p>Safely collect and store your data from multiple platforms, both online and offline, in one centralized location.</p>
+                <p>Our platform seamlessly collects and stores your data from multiple sources, both online and offline. Whether it's social media profiles, financial records, or health data, everything is securely centralized in your personal data vault.</p>
             </div>
             <div class="feature">
                 <h3>Cryptographic Security</h3>
-                <p>Your data is protected by state-of-the-art encryption, ensuring that you remain in full control of your information.</p>
+                <p>Your data is protected by state-of-the-art encryption and blockchain technology. We employ zero-knowledge proofs and other advanced cryptographic techniques to ensure that you remain in full control of your information, with no unauthorized access possible.</p>
             </div>
             <div class="feature">
-                <h3>Easy Management</h3>
-                <p>Access and manage all your data through an intuitive, user-friendly interface.</p>
+                <h3>Intuitive Management Interface</h3>
+                <p>Access and manage all your data through our user-friendly dashboard. Visualize your digital footprint, set granular privacy controls, and decide exactly who gets access to what information.</p>
             </div>
             <div class="feature">
-                <h3>Data Monetization</h3>
-                <p>Choose to monetize your data on your own terms, with smart contracts ensuring fair compensation.</p>
+                <h3>Data Monetization Marketplace</h3>
+                <p>Choose to monetize your data on your own terms. Our built-in marketplace allows you to selectively share or sell your data to interested parties. Smart contracts ensure fair compensation and maintain your privacy preferences.</p>
             </div>
+        </section>
+
+        <section id="how-it-works">
+            <h2>How It Works</h2>
+            <ol>
+                <li><strong>Create Your Vault:</strong> Sign up and create your personal data vault, secured by your private key.</li>
+                <li><strong>Connect Data Sources:</strong> Link various online accounts and input offline data sources to your vault.</li>
+                <li><strong>Manage Your Data:</strong> Use our intuitive interface to organize, visualize, and control your data.</li>
+                <li><strong>Set Privacy Preferences:</strong> Define granular access controls for different types of data and potential users.</li>
+                <li><strong>Monetize (Optional):</strong> Choose to participate in our data marketplace, where you can selectively share or sell your data.</li>
+            </ol>
+        </section>
+
+        <section id="benefits">
+            <h2>Benefits</h2>
+            <ul>
+                <li>Take control of your digital identity and personal information</li>
+                <li>Enhanced privacy and security through advanced cryptography</li>
+                <li>Simplified data management across multiple platforms</li>
+                <li>Potential for fair compensation for your valuable data</li>
+                <li>Contribute to a more equitable and user-centric digital ecosystem</li>
+            </ul>
         </section>
 
         <section class="cta">
             <h2>Join the Data Revolution</h2>
-            <p>Be among the first to take control of your digital life with Web3 Data Vault.</p>
-            <a href="#" class="button">Sign Up for Updates</a>
+            <p>Be among the first to take control of your digital life with Web3 Data Vault. Sign up now to receive updates, early access opportunities, and exclusive content as we develop this groundbreaking platform.</p>
+            <form id="signup-form">
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <button type="submit" class="button">Sign Up for Updates</button>
+            </form>
         </section>
     </main>
+
+    <script>
+        document.getElementById('signup-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var email = document.getElementById('email').value;
+            alert('Thank you for signing up! We\'ll keep ' + email + ' updated on our progress.');
+            this.reset();
+        });
+    </script>
 </body>
 </html>
